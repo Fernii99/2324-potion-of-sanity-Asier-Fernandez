@@ -11,11 +11,10 @@ class Potion{
     }
 
     static with(effect, weight, value){
-        const potionType = effect.type === "Benefitial" ? 'Potion' : 'Poison';
-        const potionName = ` ${potionType} Of ${effect.name} `;
+        const type = effect.type === 'beneficial' ? 'Potion' : 'Poison';
+        const potion_name = `${type} Of ${effect.name}`;
         const time = 10;
-        return new Potion( potionName, weight, value, time)
-
+        return new Potion( potion_name, value, weight, time);
     }
 
     static failed(){

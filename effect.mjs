@@ -4,10 +4,10 @@ const possitive_effect_tokens = ["Fortify", "Resist", "Cure", "Restore", "Regene
 
 class Effect{
     
-    // constructor(name, type){
-    //     this.name = name,
-    //     this.type = type
-    // }
+    constructor(name, type){
+        this.name = name,
+        this.type = type
+    }
     
     static from(name)   {
         return new Effect( 
